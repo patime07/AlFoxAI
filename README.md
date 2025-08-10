@@ -1,7 +1,5 @@
 # AlFoxAI
 
-# AraProf.ai
-
 Arabic AI Education Platform - MIT-quality artificial intelligence education delivered in Modern Standard Arabic.
 
 ## Overview
