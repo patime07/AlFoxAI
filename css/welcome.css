@@ -1,0 +1,191 @@
+/* Welcome Page Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.welcome-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Character Container */
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.character-container:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Fox Icon */
+.fox-icon {
+    font-size: 120px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.fox-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Header Text */
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #4b4b4b;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #777;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+/* Continue Button */
+.continue-section {
+    margin-top: 20px;
+}
+
+.continue-btn {
+    background: linear-gradient(90deg, #fda623, #ff8c42);
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 24px rgba(253, 166, 35, 0.3);
+    min-width: 200px;
+}
+
+.continue-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(253, 166, 35, 0.4);
+    background: linear-gradient(90deg, #ff8c42, #fda623);
+}
+
+.continue-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+.welcome-content > * {
+    animation: fadeIn 0.8s ease;
+}
+
+.character-container {
+    animation-delay: 0.2s;
+}
+
+.continue-section {
+    animation-delay: 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-content {
+        gap: 40px;
+    }
+    
+    .fox-icon {
+        font-size: 100px;
+    }
+    
+    .header-text h1 {
+        font-size: 36px;
+    }
+    
+    .header-text p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    
+    .continue-btn {
+        padding: 16px 48px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 20px;
+    }
+    
+    .welcome-content {
+        gap: 30px;
+    }
+    
+    .fox-icon {
+        font-size: 80px;
+    }
+    
+    .header-text h1 {
+        font-size: 28px;
+    }
+    
+    .header-text p {
+        font-size: 16px;
+    }
+    
+    .continue-btn {
+        padding: 14px 36px;
+        font-size: 14px;
+        min-width: 160px;
+    }
+}
