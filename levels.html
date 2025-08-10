@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AraProf.ai - Arabic AI Education Platform</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-top">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Header with Fox Icon -->
+        <header class="header">
+            <div class="header-content">
+                <div class="fox-icon">🦊</div>
+                <div class="header-text">
+                    <h1> !دعنا نتعلم الذكاء الاصطناعي معًا </h1>
+                    <p>اختر مستوى معرفتك للبدء </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="selection-section">
+                <div class="level-options">
+                    <!-- Beginner Level -->
+                    <div class="level-card" onclick="selectLevel('beginner')" data-level="beginner">
+                        <div class="level-card-header">
+                            <div class="level-icon beginner">🟢</div>
+                            <div class="level-info">
+                                <h3>مبتدئ</h3>
+                                <div class="learners">مثالي للمبتدئين</div>
+                            </div>
+                        </div>
+                        <div class="level-description">
+                            .لديك معرفة أساسية بالبرمجة، وتريد أن تتعلم أساسيات الذكاء الاصطناعي من خلال أمثلة بسيطة وشروحات واضحة 
+                        </div>
+                    </div>
+
+                    <!-- Intermediate Level -->
+                    <div class="level-card" onclick="selectLevel('intermediate')" data-level="intermediate">
+                        <div class="level-card-header">
+                            <div class="level-icon intermediate">🟡</div>
+                            <div class="level-info">
+                                <h3>متوسط</h3>
+                                <div class="learners">لديك تجربة أولية في مجال الذكاء الاصطناعي</div>
+                            </div>
+                        </div>
+                        <div class="level-description">
+                            .أنت مُلِمٌّ بمفاهيم الذكاء الاصطناعي الأساسية. مُستعدٌّ لأساسيات الرياضيات مع تطبيقات عملية
+                        </div>
+                    </div>
+
+                    <!-- Advanced Level -->
+                    <div class="level-card" onclick="selectLevel('advanced')" data-level="advanced">
+                        <div class="level-card-header">
+                            <div class="level-icon advanced">🔴</div>
+                            <div class="level-info">
+                                <h3>متقدم</h3>
+                                <div class="learners">محتوى من</div>
+                                <p> MIT OpenCourseWare </p>
+                            </div>
+                        </div>
+                        <div class="level-description">
+                            .لديك خلفية قوية في علوم الحاسوب. أنت على دراية بخوارزميات الذكاء الاصطناعي الأساسية، وترغب في الوصول إلى فهمٍ شاملٍ لمفاهيم الذكاء الاصطناعي 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue Section -->
+                <div class="continue-section">
+                    <button class="btn-info" onclick="showInfo()"> AraProf.ai عن </button>
+                    <button class="btn-continue" id="continue-btn" onclick="continueToLearningStyle()" disabled>
+                        متابعة
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Info Modal -->
+        <div id="info-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>AraProf.ai عن </h3>
+                <div class="modal-body">
+                    <p><strong>The Problem:</strong> Despite over 400 million Arabic speakers, less than 0.5% of online educational AI content exists in Arabic, leaving a massive learning gap in AI theory.</p>
+                    
+                    <p><strong>Our Solution:</strong> We provide an emotionally intelligent, Arabic-first AI professor that adapts to each learner’s style and skill level, delivering engaging theory lessons with continuous feedback and sentiment-based adaptation.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>AI content made accessible, from basics to MIT level coureswork</li>
+                        <li>GPT-4o generated and personalized explanations</li>
+                        <li>Natural Arabic voice over</li>
+                        <li>Emotional intelligence adapts to student confusion</li>
+                        <li>Visual learning with diagrams</li>
+                        <li>Multiple learning styles supported</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

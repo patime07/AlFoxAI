@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AraProf.ai - Quiz 1: Introduction to Search in AI</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-top">
+            <div class="progress-fill" style="width: 95%;"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="quiz-header">
+            <div class="quiz-header-content">
+                <div class="fox-icon">🦊</div>
+                <div class="quiz-info">
+                    <h1>Quiz 1: Test Your Understanding</h1>
+                    <p>Introduction to Search in AI • 3 Questions</p>
+                    <div class="quiz-meta">
+                        <span class="duration">⏱️ ~5 minutes</span>
+                        <span class="score" id="quiz-score">Score: 0/3</span>
+                    </div>
+                </div>
+                <div class="quiz-controls">
+                    <button class="btn-outline" onclick="goBackToLesson()">← Back to Lesson</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Quiz Container -->
+        <main class="quiz-main">
+            <div class="quiz-container">
+                <!-- Question 1: Multiple Choice -->
+                <div class="question-card" id="question-1">
+                    <div class="question-header">
+                        <div class="question-number">1</div>
+                        <div class="question-type">Multiple Choice</div>
+                    </div>
+                    
+                    <div class="question-content">
+                        <h3>ما هو الفرق الرئيسي بين البحث المدروس والبحث غير المدروس؟</h3>
+                        <p class="question-subtitle">(What is the main difference between informed and uninformed search?)</p>
+                        
+                        <div class="options-container">
+                            <div class="option" onclick="selectOption(1, 'a')" data-option="a">
+                                <div class="option-letter">A</div>
+                                <div class="option-text">البحث المدروس أسرع دائماً من البحث غير المدروس</div>
+                                <div class="option-translation">(Informed search is always faster than uninformed search)</div>
+                            </div>
+                            
+                            <div class="option" onclick="selectOption(1, 'b')" data-option="b">
+                                <div class="option-letter">B</div>
+                                <div class="option-text">البحث المدروس يستخدم معلومات إضافية لتوجيه البحث</div>
+                                <div class="option-translation">(Informed search uses additional information to guide the search)</div>
+                            </div>
+                            
+                            <div class="option" onclick="selectOption(1, 'c')" data-option="c">
+                                <div class="option-letter">C</div>
+                                <div class="option-text">البحث غير المدروس يجد دائماً الحل الأمثل</div>
+                                <div class="option-translation">(Uninformed search always finds the optimal solution)</div>
+                            </div>
+                            
+                            <div class="option" onclick="selectOption(1, 'd')" data-option="d">
+                                <div class="option-letter">D</div>
+                                <div class="option-text">لا يوجد فرق بينهما في الأداء</div>
+                                <div class="option-translation">(There is no difference in their performance)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2: Essay -->
+                <div class="question-card" id="question-2">
+                    <div class="question-header">
+                        <div class="question-number">2</div>
+                        <div class="question-type">Essay Question</div>
+                    </div>
+                    
+                    <div class="question-content">
+                        <h3>اشرح كيف يمكن تطبيق خوارزميات البحث في تطبيق مثل "كريم" أو "أوبر"</h3>
+                        <p class="question-subtitle">(Explain how search algorithms can be applied in apps like "Careem" or "Uber")</p>
+                        
+                        <div class="essay-container">
+                            <textarea 
+                                id="essay-answer" 
+                                placeholder="اكتب إجابتك باللغة العربية هنا... (Write your answer in Arabic here...)"
+                                rows="8"
+                                dir="rtl"
+                            ></textarea>
+                            <div class="essay-info">
+                                <span class="word-count" id="word-count">0 words</span>
+                                <span class="min-words">Minimum: 50 words</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3: True/False -->
+                <div class="question-card" id="question-3">
+                    <div class="question-header">
+                        <div class="question-number">3</div>
+                        <div class="question-type">True / False</div>
+                    </div>
+                    
+                    <div class="question-content">
+                        <h3>خوارزمية A* تضمن إيجاد المسار الأمثل إذا كانت الدالة الاستدلالية مقبولة</h3>
+                        <p class="question-subtitle">(A* algorithm guarantees finding the optimal path if the heuristic function is admissible)</p>
+                        
+                        <div class="tf-container">
+                            <div class="tf-option" onclick="selectTF('true')" data-value="true">
+                                <div class="tf-circle">
+                                    <span class="tf-icon">✓</span>
+                                </div>
+                                <div class="tf-text">
+                                    <strong>صحيح (True)</strong>
+                                    <p>The statement is correct</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tf-option" onclick="selectTF('false')" data-value="false">
+                                <div class="tf-circle">
+                                    <span class="tf-icon">✗</span>
+                                </div>
+                                <div class="tf-text">
+                                    <strong>خطأ (False)</strong>
+                                    <p>The statement is incorrect</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Section -->
+                <div class="submit-section">
+                    <div class="submit-info">
+                        <p>Review your answers and submit when ready</p>
+                        <div class="completion-status" id="completion-status">
+                            <span class="status-item" id="q1-status">Q1: Not answered</span>
+                            <span class="status-item" id="q2-status">Q2: Not answered</span>
+                            <span class="status-item" id="q3-status">Q3: Not answered</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary" id="submit-btn" onclick="submitQuiz()" disabled>
+                        Submit Quiz
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Results Modal -->
+        <div id="results-modal" class="modal" style="display: none;">
+            <div class="modal-content results-content">
+                <div class="results-header">
+                    <div class="results-icon" id="results-icon">🎉</div>
+                    <h2 id="results-title">Quiz Results</h2>
+                    <div class="final-score" id="final-score">3/3</div>
+                </div>
+                
+                <div class="results-body" id="results-body">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+                
+                <div class="results-actions" id="results-actions">
+                    <button class="btn-secondary" onclick="reviewAnswers()">Review Answers</button>
+                    <button class="btn-primary" id="next-action" onclick="proceedNext()">
+                        Continue to Lesson 2 →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emotional Support Modal -->
+        <div id="support-modal" class="modal" style="display: none;">
+            <div class="modal-content support-content">
+                <div class="support-header">
+                    <div class="support-icon">🦊</div>
+                    <h2>لا تقلق، دعني أساعدك</h2>
+                    <p>Don't worry, let me help you</p>
+                </div>
+                
+                <div class="support-body" id="support-body">
+                    <!-- Emotional support content will be populated by JavaScript -->
+                </div>
+                
+                <div class="support-actions">
+                    <button class="btn-secondary" onclick="closeSupportModal()">Back to Quiz</button>
+                    <button class="btn-primary" onclick="retakeQuiz()">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/quiz-handler.js"></script>
+    <script src="js/gpt-integration.js"></script>
+</body>
+</html>

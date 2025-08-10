@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">e>
+    <link rel="stylesheet" href="css/lessons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/content-saver.js"></script>
+    <script src="js/content-generator.js"></script>
+    <script src="js/lesson-player.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="lesson-header">
+            <div class="lesson-header-content">
+                <div class="fox-icon">🦊</div>
+                <div class="lesson-info">
+                    <h1> مقدمة في البحث في الذكاء الاصطناعي </h1>
+                    <p>MIT 6.034: Artificial Intelligence • المستوى المتقدم • التعلم السمعي</p>
+                    <div class="lesson-meta">
+                        <span>⏱️ 10 دقائق</span>
+                    </div>
+                </div>
+                <div class="lesson-controls">
+                    <button class="btn-outline" onclick="window.LessonPlayerUpdated.goBackToSelection()">الرجوع</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="lesson-main">
+            <div class="lesson-container">
+                <section class="audio-section">
+                    <div class="audio-player">
+                        <div class="audio-controls">
+                            <div class="audio-progress">
+                                <div class="progress-track">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span id="current-time">0:00</span> / <span id="total-time">10:00</span>
+                                </div>
+                            </div>
+                            <button class="audio-btn">1x</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="text-content">
+                        <div class="content-card" id="lesson-text">
+                            <div class="chunk-section">
+                                <p>جارٍ تحميل الدرس...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="lesson-actions">
+                    <button class="btn-secondary" onclick="document.getElementById('transcript-modal').style.display='flex'"> عرض النص</button>
+                    <button class="btn-primary" onclick="window.LessonPlayerUpdated.takeQuiz()">الانتقال إلى الاختبار →</button>
+                </section>
+            </div>
+        </main>
+
+        <div class="modal" id="transcript-modal">
+            <div class="modal-content transcript-content">
+                <span class="close" onclick="document.getElementById('transcript-modal').style.display='none'">&times;</span>
+                <h3>نص الدرس</h3>
+                <div id="full-transcript">
+                    <p><strong>ملخص:</strong></p>
+                    <p>هذا الدرس يغطي الدور الأساسي للبحث في الذكاء الاصطناعي، ويفرق بين خوارزميات البحث غير المدروسة والمدروسة، ويشرح الفرق بين الحلول ذات أي مسار والمسار الأمثل.</p>
+                    <p><strong>المصطلحات الأساسية:</strong></p>
+                    <ul>
+                        <li>البحث (Search)</li>
+                        <li>البحث غير المدروس (Uninformed Search)</li>
+                        <li>البحث المدروس (Informed Search)</li>
+                        <li>المسار الأمثل (Optimal Path)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
