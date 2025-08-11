@@ -1,6 +1,6 @@
 // Content Generator - OpenAI API Integration
-const OPENAI_API_KEY = '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';
-const ELEVENLABS_API_KEY = 'sk_2c09fbdd7486573a7122920452e8925a1840924e7db8e89a';
+const OPENAI_API_KEY = 'your key';
+const ELEVENLABS_API_KEY = 'your key';
 const VOICE_ID = 'JjTirzdD7T3GMLkwdd3a'; 
 
 // Lesson 1 Generation Function
