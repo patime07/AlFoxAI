@@ -1,4 +1,4 @@
-# AlFoxAI
+# ALFoxAI
 
 <img src="About/AlFoxAi.gif" width="150" height="150" alt="Animation">
 
