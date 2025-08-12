@@ -119,3 +119,5 @@ araprof-ai/
 - OpenAI for content generation capabilities
 - ElevenLabs for Arabic voice synthesis
 - Global AI Hackathon for development opportunity
+
+![Repository Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fpatime07%2FAlFoxAI&count_bg=%2379C83D&title_bg=%23555555&title=Repository%20Views&edge_flat=false)
