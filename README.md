@@ -17,6 +17,8 @@ AlFoxAi is an emotionally intelligent Arabic-first AI professor focused exclusiv
 - Assessment Engine: Multi-format quiz system with adaptive feedback
 - Progress Tracker: Learning path management and completion tracking
 
+## Demo Video
+
 
 ## Technical Architecture
 
