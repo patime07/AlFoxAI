@@ -1,65 +1,31 @@
 # AlFoxAI
 
-Arabic AI Education Platform - MIT-quality artificial intelligence education delivered in Modern Standard Arabic.
-
-## Overview
-
-AraProf.ai addresses the educational gap for Arabic-speaking learners in artificial intelligence by providing high-quality, culturally relevant content generated using advanced language models. The platform was developed during a 24-hour Global AI Hackathon as a proof of concept for multilingual AI education.
+AlFoxAi addresses the educational gap for Arabic-speaking learners in artificial intelligence by providing MIT-level, culturally relevant content generated using advanced language models. The platform was developed during the 2nd Hack-Nation's Global AI Hackathon, in collaboration with the MIT Sloan AI Club (in just 24 HOURS !)
 
 ## Problem Statement
 
-Despite over 400 million Arabic speakers worldwide, less than 0.5% of online content is in Arabic. Educational resources, especially in AI theory, are scarce and often inaccessible to Arabic learners. This language gap limits equal participation in AI education and innovation across Arabic-speaking regions. Additionally, many learners struggle emotionally when faced with complex theoretical content, leading to high dropout rates and poor retention.
+Despite over 400 million Arabic speakers worldwide, less than 0.5% of online content is in Arabic. Educational resources, especially in AI theory, are scarce and often inaccessible to Arabic learners. This language gap limits equal participation in AI education and innovation across Arabic-speaking regions. Additionally, many learners struggle emotionally when faced with complex theoretical content, leading to poor retention.
 
 ## Solution
 
-Al FOX AI is an emotionally intelligent Arabic-first AI professor focused exclusively on AI theory. It begins by identifying the learner’s preferred learning style (visual, auditory, or text-based) and adapts lessons accordingly. Core features include:
+AlFoxAi is an emotionally intelligent Arabic-first AI professor focused exclusively on AI theory. It begins by identifying the learner’s preferred learning style (visual, auditory, text-based, or kinesthetic) and adapts lessons accordingly. Core features include:
 
-Short, engaging micro-lessons in Arabic and Darija.
+- Content Generator: Automated lesson and quiz creation
+- Audio Player: Chunked audio playback with text synchronization
+- Assessment Engine: Multi-format quiz system with adaptive feedback
+- Progress Tracker: Learning path management and completion tracking
 
-Quizzes for active learning and mastery.
-
-Real-time emotional tracking via sentiment analysis to detect frustration or confidence.
-
-Adaptive pedagogy that personalizes lesson difficulty, style, and pacing based on learner feedback and emotion.
-
-A friendly Arabian red fox mascot that guides learners visually and emotionally.
 
 ## Technical Architecture
 
 ### Frontend
 - Vanilla HTML5, CSS3, and JavaScript
 - Right-to-left (RTL) text support for Arabic content
-- Responsive design optimized for mobile devices
-- No external frameworks or dependencies
 
 ### Backend Services
 - OpenAI GPT-4o API for Arabic content generation
-- ElevenLabs API for text-to-speech synthesis
-- LocalStorage for client-side data persistence
-
-### Core Components
-- Content Generator: Automated lesson and quiz creation
-- Audio Player: Chunked audio playback with text synchronization
-- Assessment Engine: Multi-format quiz system with adaptive feedback
-- Progress Tracker: Learning path management and completion tracking
-
-## Features
-
-### Multi-Modal Learning
-- Visual learning with SVG diagrams and video recommendations
-- Auditory learning with high-quality Arabic narration
-- Reading/writing support with note-taking functionality
-
-### Adaptive Content
-- Difficulty levels: Beginner, Intermediate, Advanced
-- Learning style customization
-- Personalized feedback and encouragement
-
-### Assessment System
-- Multiple choice questions
-- Essay-based evaluations
-- True/false assessments
-- Immediate feedback with explanatory content
+- ElevenLabs API for text-to-speech generation
+- LocalStorage
 
 ## Installation
 
@@ -95,11 +61,11 @@ ContentGenerator.generateCompleteLesson();
 
 This generates:
 - 4 lesson chunks in Arabic (approximately 1500 words)
-- 10 assessment questions with multiple formats
+- Assessment questions with multiple formats
 - Audio files for each lesson segment
 - Key terminology with translations
 
-### Learning Flow
+### User Journey
 1. User selects knowledge level (Beginner/Intermediate/Advanced)
 2. User chooses learning style (Visual/Auditory/Reading-Writing)
 3. Platform generates personalized lesson content
