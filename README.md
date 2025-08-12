@@ -1,7 +1,6 @@
 # AlFoxAI
 
-![Uploading Screenshot 2025-08-12 at 1.39.13 PM.png…](Mascot)
-
+![Animation](/Users/user/Downloads/AlFoxAi.gif)
 
 AlFoxAi addresses the educational gap for Arabic-speaking learners in artificial intelligence by providing MIT-level, culturally relevant content generated using advanced language models. The platform was developed during the 2nd Hack-Nation's Global AI Hackathon, in collaboration with the MIT Sloan AI Club (in just 24 HOURS !)
 
