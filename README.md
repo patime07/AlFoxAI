@@ -19,6 +19,7 @@ AlFoxAi is an emotionally intelligent Arabic-first AI professor focused exclusiv
 
 ## Demo Video
 
+Check the video on YouTube: https://youtu.be/ANg11ro5IXw?si=6Evc3LAlxFZ6Cmgl
 
 ## Technical Architecture
 
